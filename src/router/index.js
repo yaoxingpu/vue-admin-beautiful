@@ -200,31 +200,12 @@ export const asyncRoutes = [
       },
       {
         path: "map",
-        component: EmptyLayout,
-        redirect: "noRedirect",
+        component: () => import("@/views/vab/map/index"),
         name: "Map",
         meta: {
           title: "地图",
           permissions: ["admin"],
         },
-        children: [
-          {
-            path: "maptalks",
-            name: "Maptalks",
-            component: () => import("@/views/vab/map/index"),
-            meta: {
-              title: "maptalks地图",
-              permissions: ["admin"],
-              badge: "Pro",
-            },
-          },
-          {
-            path: "amap",
-            name: "Amap",
-            component: () => import("@/views/vab/map/amap"),
-            meta: { title: "高德地图", badge: "New" },
-          },
-        ],
       },
 
       {
@@ -409,6 +390,12 @@ export const asyncRoutes = [
         name: "More",
         component: () => import("@/views/vab/more/index"),
         meta: { title: "更多组件", permissions: ["admin"] },
+      },
+      {
+        path: "blacklist",
+        name: "Blacklist",
+        component: () => import("@/views/vab/blacklist/index"),
+        meta: { title: "黑名单", permissions: ["admin"] },
       },
     ],
   },
