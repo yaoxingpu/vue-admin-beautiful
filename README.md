@@ -6,9 +6,7 @@
 
 ## 地址
 
-#### - [🚀 演示地址：vue-admin-beautiful （横向纵向布局无缝切换）](https://www.baidu.com/link?url=g8AD9FObBQKCAEVMkOIhK2P1v9Yjjcqign6cQsOmtH7TSesAdq400yusuQ7qckbO&wd=&eqid=f5485e51004057b9000000035f110345)
-
-#### - [🚀 演示地址：vue-admin-beautiful （横向纵向布局无缝切换）](http://beautiful.panm.cn/vue-admin-beautiful/)
+#### - [🚀 演示地址：vue-admin-beautiful](http://beautiful.panm.cn/vue-admin-beautiful/)
 
 #### - [🚀 国内备份地址：vue-admin-beautiful](https://chu1204505056.gitee.io/vue-admin-beautiful/)
 
@@ -18,9 +16,9 @@
 
 #### - [🚀 码云仓库地址](https://gitee.com/chu1204505056/vue-admin-beautiful/)
 
-#### - [🚀 pro 版（正在全力开发、不代表最终效果）](http://beautiful.panm.cn/vue-admin-beautiful-pro/)
+#### - [🚀 pro 版演示地址](http://beautiful.panm.cn/vue-admin-beautiful-pro/)
 
-#### - [🚀 pro 版国内备份地址（正在全力开发、不代表最终效果）](https://chu1204505056.gitee.io/vue-admin-beautiful-pro/)
+#### - [🚀 pro 版国内备份地址](https://chu1204505056.gitee.io/vue-admin-beautiful-pro/)
 
 ## 安装
 
