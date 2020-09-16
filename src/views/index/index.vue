@@ -12,24 +12,30 @@
             href="https://github.com/chuzhixin/vue-admin-beautiful"
           >
             <img
-              style="height: 100%; margin-right: 10px;"
+              style="height: 100%; margin-right: 10px"
               src="https://img.shields.io/github/stars/chuzhixin/vue-admin-beautiful?style=flat-square&label=Stars&logo=github"
             />
             <img
-              style="height: 100%; margin-right: 10px;"
+              style="height: 100%; margin-right: 10px"
               src=" https://img.shields.io/badge/Visitors-79.3k/month-blue?style=flat-square&logo=Visual Studio Code"
             />
             <img
-              style="height: 100%; margin-right: 10px;"
+              style="height: 100%; margin-right: 10px"
               src="https://img.shields.io/github/last-commit/chuzhixin/vue-admin-beautiful?style=flat-square&label=Last Commit&logo=vue.js"
             />
           </a>
+          <!--  <a
+            target="_blank"
+            href="https://chu1204505056.gitee.io/vue-admin-beautiful-pro/"
+          >
+            <img
+              style="position: absolute; top: 0; right: 0"
+              src="@/assets/pro.png"
+              alt=""
+              srcset=""
+            />
+          </a> -->
         </el-alert>
-      </el-col>
-      <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
-        <el-card shadow="never">
-          <center>广告位招商</center>
-        </el-card>
       </el-col>
       <el-col :xs="24" :sm="24" :md="12" :lg="6" :xl="6">
         <el-card shadow="never">
@@ -128,7 +134,7 @@
         <el-card class="card" shadow="never">
           <div slot="header">
             <span>更新日志</span>
-            <div style="float: right;">部署时间:{{ updateTime }}</div>
+            <div style="float: right">部署时间:{{ updateTime }}</div>
           </div>
           <div class="bottom-btn">
             <el-popover placement="top" width="250" trigger="hover">
@@ -263,9 +269,9 @@
           <div slot="header">
             <span>其他信息</span>
           </div>
-          <div style="text-align: center;">
-            <vab-colorful-icon style="font-size: 140px;" icon-class="vab" />
-            <h1 style="font-size: 30px;">vue-admin-beautiful</h1>
+          <div style="text-align: center">
+            <vab-colorful-icon style="font-size: 140px" icon-class="vab" />
+            <h1 style="font-size: 30px">vue-admin-beautiful</h1>
           </div>
           <div v-for="(item, index) in noticeList" :key="index">
             <el-alert

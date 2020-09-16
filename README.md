@@ -3,22 +3,28 @@
 <h3>一款基于 vue+element-ui 的绝佳的通用型、中后台前端框架</h3>
 <h3>An excellent general-purpose, middle and background front-end framework based on Vue + element UI</h3>
 </div>
+## vue-admin-beautiful 前端讨论群-1 972435319
+
+不管您加或者不加，您都可以享受到开源的代码，感谢您的支持和信任，群内提供 vue-admin-beautiful-template 基础版本和详细的基础使用文档适合框架快速入门
+
+![img](https://gitee.com/chu1204505056/byui-bookmarks/raw/gh-pages/img/ewm.png)
 
 ## 地址
 
-#### - [🚀 演示地址：vue-admin-beautiful](http://beautiful.panm.cn/vue-admin-beautiful/)
+#### - [🚀🚀🚀 演示地址：vue-admin-beautiful](http://beautiful.panm.cn/vue-admin-beautiful/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-#### - [🚀 国内备份地址：vue-admin-beautiful](https://chu1204505056.gitee.io/vue-admin-beautiful/)
+#### - [🚀🚀🚀 国内备份地址：vue-admin-beautiful：vue-admin-beautiful](https://chu1204505056.gitee.io/vue-admin-beautiful/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-#### - [🚀 English backup address:vue-admin-beautiful](https://chuzhixin.github.io/vue-admin-beautiful/)
+#### - [🚀🚀🚀 pro 版演示地址：vue-admin-beautiful-pro](http://beautiful.panm.cn/vue-admin-beautiful-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-#### - [🚀 跨平台演示地址： vue-admin-beautiful](http://www.jq22.com/yanshi23029)
+#### - [🚀🚀🚀 pro 版国内备份地址：vue-admin-beautiful-pro](https://chu1204505056.gitee.io/vue-admin-beautiful-pro/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-#### - [🚀 码云仓库地址](https://gitee.com/chu1204505056/vue-admin-beautiful/)
+#### - [🚀🚀🚀 码云仓库地址](https://gitee.com/chu1204505056/vue-admin-beautiful/?hmsr=github&hmpl=&hmcu=&hmkw=&hmci=)
 
-#### - [🚀 pro 版演示地址](http://beautiful.panm.cn/vue-admin-beautiful-pro/)
+## 效果图
 
-#### - [🚀 pro 版国内备份地址](https://chu1204505056.gitee.io/vue-admin-beautiful-pro/)
+![](https://oscimg.oschina.net/oscnet/up-0d098308d834f605c459b770676027b4332.png)
+![](https://oscimg.oschina.net/oscnet/up-c9bca3359fd7bff40ef41d3a34d0a954643.png)
 
 ## 安装
 
@@ -46,17 +52,11 @@ npm i
 npm run serve
 ```
 
-## vue-admin-beautiful 前端讨论群-1 972435319
-
-不管您加或者不加，您都可以享受到开源的代码，感谢您的支持和信任，群内提供 vue-admin-beautiful-template 基础版本和详细的基础使用文档适合框架快速入门
-
-![img](https://gitee.com/chu1204505056/byui-bookmarks/raw/gh-pages/img/ewm.png)
-
 ## 友情链接
 
 #### - [uView 文档（超棒的移动跨端框架，文档详细，上手容易）](https://uviewui.com/)
 
-#### - [uView 开源地址（uView UI，是 uni-app 生态优秀的 UI 框架，全面的组件和便捷的工具会让您信手拈来，如鱼得水）](https://github.com/YanxinNet/uView/)
+#### - [umyui 文档（开发者准备的基于 Vue 2.0 的桌面端组件库; 流畅渲染表格万级数据）](http://www.umyui.com/)
 
 #### - [Element UI 表单设计及代码生成器（可视化表单设计器，一键生成 element 表单）](https://github.com/JakHuang/form-generator/)
 
