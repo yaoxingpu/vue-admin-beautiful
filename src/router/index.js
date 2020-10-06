@@ -1,5 +1,5 @@
 /**
- * @copyright chuzhixin 1204505056@qq.com
+ * @author chuzhixin 1204505056@qq.com （不想保留author可删除）
  * @description router全局配置，如有必要可分文件抽离，其中asyncRoutes只有在intelligence模式下才会用到，vip文档中已提供路由的基础图标与小清新图标的配置方案，请仔细阅读
  */
 
@@ -53,22 +53,6 @@ export const asyncRoutes = [
       },
     ],
   },
-  {
-    path: "/personalCenter",
-    component: Layout,
-    hidden: true,
-    redirect: "personalCenter",
-    children: [
-      {
-        path: "personalCenter",
-        name: "PersonalCenter",
-        component: () => import("@/views/personalCenter/index"),
-        meta: {
-          title: "个人中心",
-        },
-      },
-    ],
-  },
   /* {
     path: "/test",
     component: Layout,
@@ -86,36 +70,7 @@ export const asyncRoutes = [
       },
     ],
   }, */
-  {
-    path: "/personnelManagement",
-    component: Layout,
-    redirect: "noRedirect",
-    name: "PersonnelManagement",
-    meta: { title: "配置", icon: "users-cog", permissions: ["admin"] },
-    children: [
-      {
-        path: "userManagement",
-        name: "UserManagement",
-        component: () =>
-          import("@/views/personnelManagement/userManagement/index"),
-        meta: { title: "用户管理" },
-      },
-      {
-        path: "roleManagement",
-        name: "RoleManagement",
-        component: () =>
-          import("@/views/personnelManagement/roleManagement/index"),
-        meta: { title: "角色管理" },
-      },
-      {
-        path: "menuManagement",
-        name: "MenuManagement",
-        component: () =>
-          import("@/views/personnelManagement/menuManagement/index"),
-        meta: { title: "菜单管理", badge: "New" },
-      },
-    ],
-  },
+
   {
     path: "/vab",
     component: Layout,
@@ -125,22 +80,11 @@ export const asyncRoutes = [
     meta: { title: "组件", icon: "box-open" },
     children: [
       {
-        path:
-          "https://github.com/chuzhixin/vue-admin-beautiful?utm_source=gold_browser_extension",
-        name: "ExternalLink",
-        meta: {
-          title: "外链",
-          target: "_blank",
-          permissions: ["admin", "editor"],
-          badge: "New",
-        },
-      },
-      {
         path: "permissions",
         name: "Permission",
         component: () => import("@/views/vab/permissions/index"),
         meta: {
-          title: "权限控制",
+          title: "角色权限",
           permissions: ["admin", "editor"],
         },
       },
@@ -176,27 +120,12 @@ export const asyncRoutes = [
       },
       {
         path: "table",
-        component: EmptyLayout,
-        redirect: "noRedirect",
+        component: () => import("@/views/vab/table/index"),
         name: "Table",
         meta: {
           title: "表格",
           permissions: ["admin"],
         },
-        children: [
-          {
-            path: "comprehensiveTable",
-            name: "ComprehensiveTable",
-            component: () => import("@/views/vab/table/index"),
-            meta: { title: "综合表格" },
-          },
-          {
-            path: "inlineEditTable",
-            name: "InlineEditTable",
-            component: () => import("@/views/vab/table/inlineEditTable"),
-            meta: { title: "行内编辑" },
-          },
-        ],
       },
       {
         path: "map",
@@ -237,16 +166,6 @@ export const asyncRoutes = [
         name: "Card",
         component: () => import("@/views/vab/card/index"),
         meta: { title: "卡片", permissions: ["admin"] },
-      },
-
-      {
-        path: "betterScroll",
-        name: "BetterScroll",
-        component: () => import("@/views/vab/betterScroll/index"),
-        meta: {
-          title: "滚动侦测",
-          permissions: ["admin"],
-        },
       },
       {
         path: "verify",
@@ -325,12 +244,6 @@ export const asyncRoutes = [
         },
       },
       {
-        path: "qrCode",
-        name: "QrCode",
-        component: () => import("@/views/vab/qrCode/index"),
-        meta: { title: "二维码", permissions: ["admin"] },
-      },
-      {
         path: "backToTop",
         name: "BackToTop",
         component: () => import("@/views/vab/backToTop/index"),
@@ -349,18 +262,6 @@ export const asyncRoutes = [
         meta: { title: "图像拖拽比对", permissions: ["admin"] },
       },
       {
-        path: "codeGenerator",
-        name: "CodeGenerator",
-        component: () => import("@/views/vab/codeGenerator/index"),
-        meta: { title: "代码生成机", permissions: ["admin"] },
-      },
-      {
-        path: "markdown",
-        name: "Markdown",
-        component: () => import("@/views/vab/markdown/index"),
-        meta: { title: "markdown阅读器", permissions: ["admin"] },
-      },
-      {
         path: "smallComponents",
         name: "SmallComponents",
         component: () => import("@/views/vab/smallComponents/index"),
@@ -374,28 +275,57 @@ export const asyncRoutes = [
         meta: { title: "上传", permissions: ["admin"] },
       },
       {
-        path: "sticky",
-        name: "Sticky",
-        component: () => import("@/views/vab/sticky/index"),
-        meta: { title: "sticky吸附", permissions: ["admin"] },
-      },
-      {
         path: "log",
         name: "Log",
         component: () => import("@/views/vab/errorLog/index"),
         meta: { title: "错误日志模拟", permissions: ["admin"] },
       },
       {
+        path:
+          "https://github.com/chuzhixin/vue-admin-beautiful?utm_source=gold_browser_extension",
+        name: "ExternalLink",
+        meta: {
+          title: "外链",
+          target: "_blank",
+          permissions: ["admin", "editor"],
+          badge: "New",
+        },
+      },
+      {
         path: "more",
         name: "More",
         component: () => import("@/views/vab/more/index"),
-        meta: { title: "更多组件", permissions: ["admin"] },
+        meta: { title: "关于", permissions: ["admin"] },
+      },
+    ],
+  },
+  {
+    path: "/personnelManagement",
+    component: Layout,
+    redirect: "noRedirect",
+    name: "PersonnelManagement",
+    meta: { title: "配置", icon: "users-cog", permissions: ["admin"] },
+    children: [
+      {
+        path: "userManagement",
+        name: "UserManagement",
+        component: () =>
+          import("@/views/personnelManagement/userManagement/index"),
+        meta: { title: "用户管理" },
       },
       {
-        path: "blacklist",
-        name: "Blacklist",
-        component: () => import("@/views/vab/blacklist/index"),
-        meta: { title: "黑名单", permissions: ["admin"] },
+        path: "roleManagement",
+        name: "RoleManagement",
+        component: () =>
+          import("@/views/personnelManagement/roleManagement/index"),
+        meta: { title: "角色管理" },
+      },
+      {
+        path: "menuManagement",
+        name: "MenuManagement",
+        component: () =>
+          import("@/views/personnelManagement/menuManagement/index"),
+        meta: { title: "菜单管理", badge: "New" },
       },
     ],
   },
@@ -427,14 +357,6 @@ export const asyncRoutes = [
         component: () => import("@/views/mall/goodsList/index"),
         meta: {
           title: "商品列表",
-        },
-      },
-      {
-        path: "goodsDetail",
-        name: "GoodsDetail",
-        component: () => import("@/views/mall/goodsDetail/index"),
-        meta: {
-          title: "商品详情",
         },
       },
     ],
@@ -476,12 +398,12 @@ const router = new VueRouter({
   routes: constantRoutes,
 });
 //注释的地方是允许路由重复点击，如果你觉得框架路由跳转规范太过严格可选择放开
-/* const originalPush = VueRouter.prototype.push;
+const originalPush = VueRouter.prototype.push;
 VueRouter.prototype.push = function push(location, onResolve, onReject) {
   if (onResolve || onReject)
     return originalPush.call(this, location, onResolve, onReject);
   return originalPush.call(this, location).catch((err) => err);
-}; */
+};
 
 export function resetRouter() {
   router.matcher = new VueRouter({

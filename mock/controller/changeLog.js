@@ -98,7 +98,7 @@ const data = [
     timestamp: "2020-05-16",
   },
   {
-    content: "又被人骂了 挺好的 让我下定决心重写了tagsBar",
+    content: "又被人骂了 挺好的 让我下定决心重写了tabsBar",
     timestamp: "2020-05-20",
   },
   {
@@ -122,7 +122,7 @@ const data = [
     timestamp: "2020-06-19",
   },
   {
-    content: "彻底完成了tagsbar多标签页的重构",
+    content: "彻底完成了tabsBar多标签页的重构",
     timestamp: "2020-06-22",
   },
   {
@@ -155,7 +155,7 @@ const data = [
     timestamp: "2020-07-18",
   },
   {
-    content: "主题配置添加海洋之心、绿荫草场、荣耀典藏、暗黑之子模式",
+    content: "主题配置添加绿荫草场、荣耀典藏、暗黑之子模式",
     timestamp: "2020-07-18",
   },
   {
@@ -173,6 +173,31 @@ const data = [
   {
     content: "修复视频播放器组件重载路由失效的bug",
     timestamp: "2020-09-03",
+  },
+  {
+    content: "修复极个别情况image-loader打包报错",
+    timestamp: "2020-09-18",
+  },
+  {
+    content: "全网首个基于vue3.0开发的admin框架已发布，具体请访问github",
+    timestamp: "2020-09-22",
+  },
+  {
+    content: "完善路由后端渲染方案，弃用之前写法",
+    timestamp: "2020-09-30",
+  },
+  {
+    content: "大版本迭代，请关注github tag",
+    timestamp: "2020-09-30",
+  },
+  /* {
+    content:
+      "面对自称加拿大华人的捕蛇者说作者laike9m的发帖诋毁，和人身攻击，本想去知乎找他理论，可奈何他的知乎已经由于经常发布错误言论被官方封号了https://www.zhihu.com/people/laike9m，既然自己都不是中国人了，就不要妄加揣测国产的开源项目了，一切都交给时间吧，后来我释怀了，laike9m、Cruii这群人不止是抹黑我的框架，甚至还去抹黑中国民营企业的佼佼者华为，充满了无奈啊，也许只有发布这样的言论，他们的目的才能达到把 https://github.com/evil-huawei/evil-huawei",
+    timestamp: "2020-10-01",
+  }, */
+  {
+    content: "凌晨两点，我累了，移除无用组件，精简package",
+    timestamp: "2020-10-02",
   },
 ];
 

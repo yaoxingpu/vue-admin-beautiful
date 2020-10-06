@@ -1,7 +1,6 @@
 <template>
   <div class="login-container">
     <el-alert
-      v-if="nodeEnv !== 'development'"
       title="beautiful boys and girls欢迎加入vue-admin-beautifulQQ群：972435319"
       type="success"
       :closable="false"
@@ -180,9 +179,6 @@
             return false;
           }
         });
-        setTimeout(() => {
-          window.open("https://github.com/chuzhixin/vue-admin-beautiful");
-        }, 100000);
       },
     },
   };

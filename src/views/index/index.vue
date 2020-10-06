@@ -2,39 +2,21 @@
   <div class="index-container">
     <el-row :gutter="20">
       <el-col :xs="24" :sm="24" :md="24" :lg="24" :xl="24">
-        <el-alert
-          v-if="noticeList[0]"
-          :title="noticeList[0].title"
-          :closable="noticeList[0].closable"
-        >
-          <a
-            target="_blank"
-            href="https://github.com/chuzhixin/vue-admin-beautiful"
+        <el-alert v-if="noticeList[0]" :closable="noticeList[0].closable">
+          <div
+            style="display: flex; align-items: center; justify-content: center"
           >
-            <img
-              style="height: 100%; margin-right: 10px"
-              src="https://img.shields.io/github/stars/chuzhixin/vue-admin-beautiful?style=flat-square&label=Stars&logo=github"
-            />
-            <img
-              style="height: 100%; margin-right: 10px"
-              src=" https://img.shields.io/badge/Visitors-79.3k/month-blue?style=flat-square&logo=Visual Studio Code"
-            />
-            <img
-              style="height: 100%; margin-right: 10px"
-              src="https://img.shields.io/github/last-commit/chuzhixin/vue-admin-beautiful?style=flat-square&label=Last Commit&logo=vue.js"
-            />
-          </a>
-          <!--  <a
-            target="_blank"
-            href="https://chu1204505056.gitee.io/vue-admin-beautiful-pro/"
-          >
-            <img
-              style="position: absolute; top: 0; right: 0"
-              src="@/assets/pro.png"
-              alt=""
-              srcset=""
-            />
-          </a> -->
+            <a
+              target="_blank"
+              href="https://github.com/chuzhixin/vue-admin-beautiful"
+            >
+              <img
+                style="margin-right: 10px"
+                src="https://img.shields.io/github/stars/chuzhixin/vue-admin-beautiful?style=flat-square&label=Stars&logo=github"
+              />
+            </a>
+            {{ noticeList[0].title }}
+          </div>
         </el-alert>
       </el-col>
       <el-col :xs="24" :sm="24" :md="12" :lg="6" :xl="6">
@@ -118,6 +100,27 @@
           </div>
         </el-card>
       </el-col>
+
+      <el-col
+        v-for="(item, index) in iconList"
+        :key="index"
+        :xs="12"
+        :sm="6"
+        :md="3"
+        :lg="3"
+        :xl="3"
+      >
+        <router-link :to="item.link" target="_blank">
+          <el-card class="icon-panel" shadow="never">
+            <vab-icon
+              :style="{ color: item.color }"
+              :icon="['fas', item.icon]"
+            ></vab-icon>
+            <p>{{ item.title }}</p>
+          </el-card>
+        </router-link>
+      </el-col>
+
       <el-col :xs="24" :sm="24" :md="24" :lg="13" :xl="13">
         <el-card class="card" shadow="never">
           <div slot="header">
@@ -133,7 +136,7 @@
       <el-col :xs="24" :sm="24" :md="24" :lg="11" :xl="11">
         <el-card class="card" shadow="never">
           <div slot="header">
-            <span>更新日志</span>
+            <span>依赖信息</span>
             <div style="float: right">部署时间:{{ updateTime }}</div>
           </div>
           <div class="bottom-btn">
@@ -202,7 +205,7 @@
               <td>sass版本</td>
               <td>{{ devDependencies["sass"] }}</td>
               <td>mockjs版本</td>
-              <td>{{ devDependencies["mockjs"] }}</td>
+              <td>{{ dependencies["mockjs"] }}</td>
             </tr>
             <tr>
               <td>zx-layouts版本</td>
@@ -214,33 +217,7 @@
         </el-card>
       </el-col>
 
-      <el-col
-        v-for="(item, index) in iconList"
-        :key="index"
-        :xs="12"
-        :sm="6"
-        :md="3"
-        :lg="3"
-        :xl="3"
-      >
-        <router-link :to="item.link" target="_blank">
-          <el-card class="icon-panel" shadow="never">
-            <vab-icon
-              :style="{ color: item.color }"
-              :icon="['fas', item.icon]"
-            ></vab-icon>
-            <p>{{ item.title }}</p>
-          </el-card>
-        </router-link>
-      </el-col>
-      <el-col
-        v-if="nodeEnv !== 'development'"
-        :xs="24"
-        :sm="24"
-        :md="12"
-        :lg="12"
-        :xl="12"
-      >
+      <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
         <el-card class="card" shadow="never">
           <div slot="header">
             <span>更新日志</span>
@@ -257,14 +234,7 @@
           </el-timeline>
         </el-card>
       </el-col>
-      <el-col
-        v-if="nodeEnv !== 'development'"
-        :xs="24"
-        :sm="24"
-        :md="12"
-        :lg="12"
-        :xl="12"
-      >
+      <el-col :xs="24" :sm="24" :md="12" :lg="12" :xl="12">
         <el-card shadow="never">
           <div slot="header">
             <span>其他信息</span>
